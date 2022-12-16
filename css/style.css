@@ -9,3 +9,18 @@ iframe {
     top: 4px;
     left: 4px;
 }
+.button {
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+.button1 {
+    background-color: #000;
+}
