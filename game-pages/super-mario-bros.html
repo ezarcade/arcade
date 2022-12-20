@@ -13,26 +13,31 @@
 <p align="center"><iframe src="https://spew45.github.io/webretro/index.html?core=autodetect&rom=https://spew45.github.io/new-website/webretro/roms/super_mario_bros.nes" width="512" height="480" id="iframe"></iframe></p>
 
 <p align="center"><button class="button button1" onclick="openFullscreen();">Fullscreen</button>
-<button class="button button1" onclick="myFunction()">Enlarge</button>
-
-    <script>
-    var elem = document.getElementById("iframe");
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
+  <button class="button button1" onclick="myFunction()">Enlarge</button>
+  <button class="button button1" onclick="normalSize()">Normal</button>
+  
+      <script>
+      var elem = document.getElementById("iframe");
+      function openFullscreen() {
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+          elem.msRequestFullscreen();
+        }
       }
-    }
-    function myFunction() {
-      document.getElementById("iframe").height = "720";
-      document.getElementById("iframe").width = "768";
-    }
-    </script>
-    </p>
-
-<div class="text">
-<embed src="../dump/text.html">
-</div>
+      function myFunction() {
+        document.getElementById("iframe").height = "720";
+        document.getElementById("iframe").width = "768";
+      }
+      function normalSize() {
+        document.getElementById("iframe").height = "480";
+        document.getElementById("iframe").width = "512";
+      }
+      </script>
+      </p>
+  
+  <div class="text">
+  <embed src="../dump/text.html">
+  </div>
