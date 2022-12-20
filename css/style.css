@@ -22,3 +22,7 @@ iframe {
 .button1 {
     background-color: #000;
 }
+embed {
+    height: 800px;
+    width: 100px;
+}
