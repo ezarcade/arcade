@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<link rel="icon" type="image/x-icon" href="../images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+
+<title>Arcade</title>
+
+<body style="background-color: #1c1c1c;"></body>
+
+<p align="center"><iframe src="https://spew45.github.io/webretro/index.html?core=autodetect&rom=https://spew45.github.io/new-website/webretro/roms/r-type_III.sfc" width="512" height="480" id="iframe"></iframe></p>
+
+<p align="center"><button class="button button1" onclick="openFullscreen();">Fullscreen</button>
+<button class="button button1" onclick="myFunction()">Enlarge</button>
+<button class="button button1" onclick="normalSize()">Normal</button>
+
+    <script>
+    var elem = document.getElementById("iframe");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+    function myFunction() {
+      document.getElementById("iframe").height = "720";
+      document.getElementById("iframe").width = "768";
+    }
+    function normalSize() {
+      document.getElementById("iframe").height = "480";
+      document.getElementById("iframe").width = "512";
+    }
+    </script>
+    </p>
+
+<div class="text">
+<embed src="../dump/text.html">
+</div>
