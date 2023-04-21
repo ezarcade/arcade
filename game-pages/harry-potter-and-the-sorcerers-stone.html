@@ -16,28 +16,28 @@
   <button class="button button1" onclick="myFunction()">Enlarge</button>
   <button class="button button1" onclick="normalSize()">Normal</button>
   
-      <script>
-      var elem = document.getElementById("iframe");
-      function openFullscreen() {
-        if (elem.requestFullscreen) {
-          elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) { /* Safari */
-          elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE11 */
-          elem.msRequestFullscreen();
-        }
+  <script>
+    var elem = document.getElementById("iframe");
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
       }
-      function myFunction() {
-        document.getElementById("iframe").height = "720";
-        document.getElementById("iframe").width = "1080";
-      }
-      function normalSize() {
-        document.getElementById("iframe").height = "480";
-        document.getElementById("iframe").width = "720";
-      }
-      </script>
-      </p>
-  
-  <div class="text">
-  <embed src="../dump/text.html">
-  </div>
+    }
+    function myFunction() {
+      document.getElementById("iframe").height = "720";
+      document.getElementById("iframe").width = "1080";
+    }
+    function normalSize() {
+      document.getElementById("iframe").height = "480";
+      document.getElementById("iframe").width = "720";
+    }
+    </script>
+    </p>
+
+<div class="text">
+<embed src="../dump/text.html">
+</div>
